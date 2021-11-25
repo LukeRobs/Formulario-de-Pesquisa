@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario de Pesquisa</title>
+</head>
+<body>
+    <div>
+    <h1>FreeCodeCamp Survey form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <section>
+        <div class="formContainer">
+            <form action="#" method="get">
+                <h3>Nome</h3>
+                <input type="text" name="Nome" id="nome" placeholder="Digite o seu Nome">
+                <h3>Email</h3>
+                <input type="email" name="email" id="email" placeholder="Digite o seu E-mail">
+                <h3>Idade (opcional)</h3>
+                <input type="text" name="idade" id="idade" placeholder="idade">
+                <h3>Qual opção descreve melhor sua função atual?</h3>
+
+                <select name="funcao" id="funcao">
+                    <option disabled selected value>Selecione Função Atual</option>
+                    <option value="estudante">estudante</option>
+                    <option value="trabalho-tempo-integral">Trabalho tempo integral</option>
+                    <option value="outro">outro</option>
+                </select>
+
+                <h3>Você recomendaria freeCodeCamp a um amigo?</h3>
+                <label class="container">Sim
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark1"></span>
+                </label>
+                <label class="container">Talvez
+                    <input type="radio" name="radio">
+                    <span class="checkmark1"></span>
+                </label>
+                <label class="container">Não
+                    <input type="radio" name="radio">
+                    <span class="checkmark1"></span>
+                </label>
+                
+
+                <h3>Qual é o seu recurso favorito do freeCodeCamp?</h3>
+                <select name="recurso" id="recurso">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="desafio">desafios</option>
+                    <option value="projetos">projetos</option>
+                    <option value="comunidade">comunidade</option>
+                </select>
+
+                <h3>O que você acha que deveria melhorar (Marque as opções que quiser)</h3>
+                <label class="container">Projetos Front-end
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Projetos Back-end
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Visualização de dados
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Desafios
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Comunidade de codigo aberto
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Fórum
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <h3>Deixe uma sujestão</h3>
+                <label for="mensagem"></label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="65"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
